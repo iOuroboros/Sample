@@ -1,0 +1,84 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v5.0,Profile=windows": {
+      "DalamudPackager/2.1.2": {
+        "type": "package",
+        "build": {
+          "build/DalamudPackager.props": {},
+          "build/DalamudPackager.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/DalamudPackager.props": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DalamudPackager/2.1.2": {
+      "sha512": "6i24wb36qPpJfyyVePHctXE3KXjQu4w3J12kdOlH5PZJcqB+aPkPZGuOebbDVCvt8RwNRjTnhhAFn8lHlvMmTg==",
+      "type": "package",
+      "path": "dalamudpackager/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DalamudPackager.props",
+        "build/DalamudPackager.targets",
+        "buildMultiTargeting/DalamudPackager.props",
+        "dalamudpackager.2.1.2.nupkg.sha512",
+        "dalamudpackager.nuspec",
+        "tasks/net48/DalamudPackager.dll",
+        "tasks/net48/Newtonsoft.Json.dll",
+        "tasks/net48/YamlDotNet.dll",
+        "tasks/netstandard2.1/DalamudPackager.dll",
+        "tasks/netstandard2.1/Newtonsoft.Json.dll",
+        "tasks/netstandard2.1/YamlDotNet.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v5.0,Profile=windows": [
+      "DalamudPackager >= 2.1.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Ouroboros\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "0.0.0.1",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Ouroboros\\Desktop\\SamplePlugin-master\\SamplePlugin\\SamplePlugin.csproj",
+      "projectName": "SamplePlugin",
+      "projectPath": "C:\\Users\\Ouroboros\\Desktop\\SamplePlugin-master\\SamplePlugin\\SamplePlugin.csproj",
+      "packagesPath": "C:\\Users\\Ouroboros\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ouroboros\\Desktop\\SamplePlugin-master\\SamplePlugin\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Ouroboros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net50-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net50-windows": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net50-windows": {
+        "dependencies": {
+          "DalamudPackager": {
+            "target": "Package",
+            "version": "[2.1.2, )"
+          }
+        }
+      }
+    }
+  }
+}
